@@ -3,17 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-13768||-9223372036854775808|c|G
-13768||10|c|G
-13768||10|C|G
-13768||10|T|G</Grants>
-      <IntrospectionStateNumber>749</IntrospectionStateNumber>
+      <IntrospectionStateNumber>848</IntrospectionStateNumber>
       <ServerVersion>14.6</ServerVersion>
-      <StartupTime>1669555695</StartupTime>
+      <StartupTime>1669561415</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -800,7 +792,19 @@ false posixrules
     </root>
     <database id="2" parent="1" name="app">
       <Current>1</Current>
+      <Grants>11||10|C|G
+11||-9223372036854775808|U|G
+11||10|U|G
+2200||-9223372036854775808|C|G
+2200||10|C|G
+2200||-9223372036854775808|U|G
+2200||10|U|G
+13403||10|C|G
+13403||-9223372036854775808|U|G
+13403||10|U|G</Grants>
       <ObjectId>16384</ObjectId>
+      <Relations>sequence|table|16407|16400|1
+</Relations>
       <OwnerName>app</OwnerName>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -863,23 +867,5 @@ false posixrules
       <StateNumber>1</StateNumber>
       <OwnerName>app</OwnerName>
     </tablespace>
-    <schema id="18" parent="2" name="information_schema">
-      <ObjectId>13403</ObjectId>
-      <StateNumber>533</StateNumber>
-      <OwnerName>app</OwnerName>
-    </schema>
-    <schema id="19" parent="2" name="pg_catalog">
-      <Comment>system catalog schema</Comment>
-      <ObjectId>11</ObjectId>
-      <StateNumber>526</StateNumber>
-      <OwnerName>app</OwnerName>
-    </schema>
-    <schema id="20" parent="2" name="public">
-      <Comment>standard public schema</Comment>
-      <Current>1</Current>
-      <ObjectId>2200</ObjectId>
-      <StateNumber>527</StateNumber>
-      <OwnerName>app</OwnerName>
-    </schema>
   </database-model>
 </dataSource>
